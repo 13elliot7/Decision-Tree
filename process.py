@@ -1,11 +1,9 @@
 import csv
 
-# Specify file paths
-# Input and output file paths
 input_file = 'D:/work/task/cuhk/cmsc5724/proj/adult/adult.data'
 output_file = 'D:/work/task/cuhk/cmsc5724/proj/adult/adult_processed.csv'
 
-# Define the column headers according to the dataset
+# Define the column headers
 headers = [
     "age", "workclass", "fnlwgt", "education", "education_num", "marital_status",
     "occupation", "relationship", "race", "sex", "capital_gain", "capital_loss",
