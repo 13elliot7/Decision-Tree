@@ -46,22 +46,19 @@ class DecisionTree:
                         return max_majority_label([row[-1] for row in tree])
                 except IndexError:
                     return max_majority_label([row[-1] for row in tree])
-                # return self.predict_instance(subtree.get(attr_value), instance)
     
     def predict(self, data):
         """
         Predict labels for a specific dataset
         """
-        return [self.predict_instance(self.tree, instance) for instance in data]
+        return [[self.predict_instance(self.tree, instance)] for instance in data]
     
-    def evaluate(self, data, target_index=-1):
+    def evaluate(self, y_actual, y_pred):
         """
         Evaluate the decision tree on the given dataset
         """
-        predictions = self.predict(data)
-        actual = [row[target_index] for row in data]
-        correct_num = sum(1 for p, a in zip(predictions, actual) if p == a)
-        accuracy = correct_num / len(data)
+        correct_num = sum(1 for a, p in zip(y_actual, y_pred) if a == p)
+        accuracy = correct_num / len(y_actual)
         return accuracy
     
     def save_tree(self, filename):
