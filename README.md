@@ -25,3 +25,5 @@ csv_writer.writerow(row)
 ```
 
 Finally, the processed row is written to the output CSV file.
+
+## Implementation of Hunt's algorithm
