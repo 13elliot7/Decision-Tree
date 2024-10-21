@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Decision-Tree
 
 ## Data preprocessing
@@ -26,7 +25,7 @@ csv_writer.writerow(row)
 ```
 
 Finally, the processed row is written to the output CSV file.
-=======
+
 # Decision-Tree
 
 ## Data preprocessing
