@@ -78,7 +78,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 																			|--False
 																				|--Label >50K
 																	|--False
@@ -160,7 +160,7 @@
 																			|--False
 																				|--Attribute age <= 33.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Label >50K
 											|--Other
@@ -192,7 +192,7 @@
 																					|--False
 																						|--Attribute age <= 34.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 																			|--False
@@ -278,7 +278,7 @@
 													|--False
 														|--Attribute age <= 52.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label >50K
 									|--False
@@ -340,7 +340,7 @@
 													|--False
 														|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Asian-Pac-Islander
 										|--Label >50K
 									|--Amer-Indian-Eskimo
@@ -362,7 +362,7 @@
 															|--False
 																|--Attribute age <= 42.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Label >50K
 									|--Black
@@ -388,7 +388,7 @@
 															|--False
 																|--Attribute age <= 31.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 32.0
 																			|--True
@@ -428,7 +428,7 @@
 																							|--False
 																								|--Label <=50K
 													|--False
-														|--Label <=50K
+														|--Label >50K
 											|--Other-relative
 												|--Label <=50K
 									|--Amer-Indian-Eskimo
@@ -540,7 +540,7 @@
 																			|--False
 																				|--Attribute age <= 37.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 38.0
 																							|--True
@@ -692,7 +692,7 @@
 											|--Asian-Pac-Islander
 												|--Label >50K
 											|--Black
-												|--Label <=50K
+												|--Label >50K
 											|--Other
 												|--Label <=50K
 											|--Amer-Indian-Eskimo
@@ -764,7 +764,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 																	|--False
 																		|--Label >50K
 									|--Asian-Pac-Islander
@@ -832,7 +832,7 @@
 											|--White
 												|--Attribute age <= 25.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 26.0
 															|--True
@@ -840,11 +840,11 @@
 															|--False
 																|--Attribute age <= 33.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 34.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 38.0
 																					|--True
@@ -858,7 +858,7 @@
 											|--Black
 												|--Label <=50K
 											|--Asian-Pac-Islander
-												|--Label <=50K
+												|--Label >50K
 									|--Own-child
 										|--Label <=50K
 							|--Self-emp-inc
@@ -1216,7 +1216,7 @@
 							|--Local-gov
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 							|--Self-emp-inc
@@ -1336,7 +1336,7 @@
 																	|--False
 																		|--Attribute age <= 28.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 30.0
 																					|--True
@@ -1424,7 +1424,7 @@
 							|--Own-child
 								|--Label <=50K
 							|--Wife
-								|--Label <=50K
+								|--Label >50K
 							|--Other-relative
 								|--Label <=50K
 					|--State-gov
@@ -1474,7 +1474,7 @@
 							|--Wife
 								|--Label >50K
 					|--Self-emp-not-inc
-						|--Label <=50K
+						|--Label >50K
 					|--Self-emp-inc
 						|--Label <=50K
 			|--Tech-support
@@ -1488,7 +1488,7 @@
 									|--True
 										|--Attribute age <= 28.0
 											|--True
-												|--Label <=50K
+												|--Label >50K
 											|--False
 												|--Attribute age <= 29.0
 													|--True
@@ -1496,7 +1496,7 @@
 													|--False
 														|--Attribute age <= 30.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 31.0
 																	|--True
@@ -1516,7 +1516,7 @@
 															|--False
 																|--Attribute age <= 39.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Label >50K
 													|--False
@@ -1594,7 +1594,7 @@
 					|--State-gov
 						|--Label <=50K
 					|--Self-emp-inc
-						|--Label <=50K
+						|--Label >50K
 			|--Sales
 				|--Attribute workclass
 					|--Private
@@ -1618,11 +1618,11 @@
 																			|--True
 																				|--Attribute age <= 25.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 27.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 																			|--False
@@ -1660,7 +1660,7 @@
 													|--False
 														|--Label >50K
 											|--Other-relative
-												|--Label <=50K
+												|--Label >50K
 									|--Black
 										|--Label >50K
 									|--Asian-Pac-Islander
@@ -1720,7 +1720,7 @@
 																							|--False
 																								|--Label <=50K
 													|--False
-														|--Label <=50K
+														|--Label >50K
 											|--Other
 												|--Label >50K
 											|--Black
@@ -1778,7 +1778,7 @@
 																					|--True
 																						|--Label <=50K
 																					|--False
-																						|--Label <=50K
+																						|--Label >50K
 															|--False
 																|--Label <=50K
 											|--Black
@@ -1794,7 +1794,7 @@
 									|--Other-relative
 										|--Label <=50K
 							|--Married-spouse-absent
-								|--Label <=50K
+								|--Label >50K
 					|--Self-emp-not-inc
 						|--Attribute relationship
 							|--Husband
@@ -1848,7 +1848,7 @@
 													|--False
 														|--Attribute age <= 33.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label <=50K
 							|--Unmarried
@@ -1906,7 +1906,7 @@
 							|--Own-child
 								|--Label >50K
 							|--Unmarried
-								|--Label <=50K
+								|--Label >50K
 							|--Wife
 								|--Label >50K
 							|--Other-relative
@@ -1942,7 +1942,7 @@
 																	|--False
 																		|--Label <=50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Asian-Pac-Islander
 										|--Label <=50K
 									|--Amer-Indian-Eskimo
@@ -1992,7 +1992,7 @@
 							|--Divorced
 								|--Attribute race
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--White
 										|--Label <=50K
 									|--Other
@@ -2006,9 +2006,9 @@
 					|--Self-emp-not-inc
 						|--Label <=50K
 					|--Local-gov
-						|--Label <=50K
+						|--Label >50K
 					|--Self-emp-inc
-						|--Label <=50K
+						|--Label >50K
 					|--State-gov
 						|--Label <=50K
 					|--Federal-gov
@@ -2030,7 +2030,7 @@
 													|--False
 														|--Attribute age <= 41.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label >50K
 									|--Black
@@ -2068,7 +2068,7 @@
 					|--Federal-gov
 						|--Label >50K
 					|--Self-emp-not-inc
-						|--Label <=50K
+						|--Label >50K
 					|--Self-emp-inc
 						|--Label >50K
 			|--Handlers-cleaners
@@ -2116,7 +2116,7 @@
 															|--False
 																|--Attribute age <= 26.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 27.0
 																			|--True
@@ -2142,7 +2142,7 @@
 											|--White
 												|--Attribute age <= 25.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 30.0
 															|--True
@@ -2150,7 +2150,7 @@
 															|--False
 																|--Attribute age <= 31.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 32.0
 																			|--True
@@ -2216,7 +2216,7 @@
 					|--State-gov
 						|--Label <=50K
 					|--Federal-gov
-						|--Label <=50K
+						|--Label >50K
 			|--Transport-moving
 				|--Attribute relationship
 					|--Husband
@@ -2252,7 +2252,7 @@
 			|--Farming-fishing
 				|--Attribute workclass
 					|--Self-emp-inc
-						|--Label <=50K
+						|--Label >50K
 					|--Self-emp-not-inc
 						|--Attribute relationship
 							|--Husband
@@ -2270,7 +2270,7 @@
 													|--False
 														|--Attribute age <= 43.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label <=50K
 							|--Not-in-family
@@ -2388,7 +2388,7 @@
 																					|--False
 																						|--Label <=50K
 																	|--False
-																		|--Label <=50K
+																		|--Label >50K
 															|--False
 																|--Attribute age <= 34.0
 																	|--True
@@ -2462,7 +2462,7 @@
 							|--Unmarried
 								|--Label <=50K
 							|--Not-in-family
-								|--Label <=50K
+								|--Label >50K
 					|--Without-pay
 						|--Label <=50K
 					|--State-gov
@@ -2508,7 +2508,7 @@
 																			|--True
 																				|--Label <=50K
 																			|--False
-																				|--Label <=50K
+																				|--Label >50K
 															|--False
 																|--Attribute age <= 47.0
 																	|--True
@@ -2584,7 +2584,7 @@
 																					|--True
 																						|--Attribute age <= 42.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 																					|--False
@@ -2598,7 +2598,7 @@
 									|--Asian-Pac-Islander
 										|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Amer-Indian-Eskimo
 										|--Label <=50K
 							|--Self-emp-inc
@@ -2624,13 +2624,13 @@
 																			|--True
 																				|--Attribute age <= 38.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
-																						|--Label <=50K
+																						|--Label >50K
 																			|--False
 																				|--Attribute age <= 44.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 45.0
 																							|--True
@@ -2656,7 +2656,7 @@
 									|--Other
 										|--Label >50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 					|--Not-in-family
@@ -2668,7 +2668,7 @@
 											|--White
 												|--Attribute age <= 24.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 26.0
 															|--True
@@ -2790,7 +2790,7 @@
 																							|--False
 																								|--Label <=50K
 											|--Black
-												|--Label <=50K
+												|--Label >50K
 											|--Asian-Pac-Islander
 												|--Label <=50K
 									|--Separated
@@ -2826,7 +2826,7 @@
 															|--False
 																|--Attribute age <= 33.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 35.0
 																			|--True
@@ -2848,9 +2848,9 @@
 									|--Black
 										|--Label <=50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-inc
 								|--Label >50K
 							|--Self-emp-not-inc
@@ -3012,7 +3012,7 @@
 					|--State-gov
 						|--Label <=50K
 					|--Federal-gov
-						|--Label <=50K
+						|--Label >50K
 			|--Machine-op-inspct
 				|--Attribute workclass
 					|--Private
@@ -3088,7 +3088,7 @@
 											|--Wife
 												|--Attribute age <= 23.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 24.0
 															|--True
@@ -3238,7 +3238,7 @@
 					|--Self-emp-inc
 						|--Label <=50K
 					|--State-gov
-						|--Label <=50K
+						|--Label >50K
 					|--Local-gov
 						|--Label <=50K
 					|--Without-pay
@@ -3330,7 +3330,7 @@
 																			|--False
 																				|--Attribute age <= 37.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 39.0
 																							|--True
@@ -3358,11 +3358,11 @@
 																			|--True
 																				|--Attribute age <= 35.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 36.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label <=50K
 																			|--False
@@ -3414,7 +3414,7 @@
 											|--Black
 												|--Label <=50K
 											|--Asian-Pac-Islander
-												|--Label <=50K
+												|--Label >50K
 									|--Not-in-family
 										|--Label <=50K
 									|--Other-relative
@@ -3444,7 +3444,7 @@
 													|--True
 														|--Attribute age <= 29.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label <=50K
 													|--False
@@ -3558,7 +3558,7 @@
 									|--Other
 										|--Label <=50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Amer-Indian-Eskimo
 										|--Label <=50K
 									|--Black
@@ -3624,7 +3624,7 @@
 																	|--False
 																		|--Attribute age <= 38.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 40.0
 																					|--True
@@ -3640,7 +3640,7 @@
 											|--Black
 												|--Label >50K
 									|--Other-relative
-										|--Label <=50K
+										|--Label >50K
 							|--State-gov
 								|--Label <=50K
 							|--Self-emp-not-inc
@@ -3902,7 +3902,7 @@
 																			|--False
 																				|--Attribute age <= 37.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Label <=50K
 													|--False
@@ -4088,7 +4088,7 @@
 									|--Black
 										|--Label <=50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label <=50K
 									|--Amer-Indian-Eskimo
@@ -4108,7 +4108,7 @@
 													|--False
 														|--Attribute age <= 33.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 35.0
 																	|--True
@@ -4230,11 +4230,11 @@
 															|--False
 																|--Attribute age <= 26.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 27.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 37.0
 																					|--True
@@ -4242,7 +4242,7 @@
 																					|--False
 																						|--Attribute age <= 38.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label <=50K
 											|--Other-relative
@@ -4266,7 +4266,7 @@
 									|--Asian-Pac-Islander
 										|--Label <=50K
 									|--Amer-Indian-Eskimo
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label <=50K
 							|--Never-married
@@ -4554,7 +4554,7 @@
 											|--False
 												|--Attribute age <= 36.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 39.0
 															|--True
@@ -4578,7 +4578,7 @@
 																	|--False
 																		|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label <=50K
 							|--Divorced
@@ -4626,7 +4626,7 @@
 													|--True
 														|--Attribute age <= 22.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 27.0
 																	|--True
@@ -4682,7 +4682,7 @@
 																					|--False
 																						|--Attribute age <= 36.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label <=50K
 															|--False
@@ -4762,7 +4762,7 @@
 													|--False
 														|--Attribute age <= 32.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 36.0
 																	|--True
@@ -5030,7 +5030,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 																	|--False
 																		|--Attribute age <= 35.0
 																			|--True
@@ -5082,7 +5082,7 @@
 													|--False
 														|--Attribute age <= 32.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 46.0
 																	|--True
@@ -5092,7 +5092,7 @@
 																			|--False
 																				|--Attribute age <= 35.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 37.0
 																							|--True
@@ -5122,7 +5122,7 @@
 													|--True
 														|--Attribute age <= 27.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label <=50K
 													|--False
@@ -5140,7 +5140,7 @@
 																			|--False
 																				|--Attribute age <= 50.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 53.0
 																							|--True
@@ -5164,7 +5164,7 @@
 									|--Private
 										|--Label <=50K
 									|--Self-emp-inc
-										|--Label <=50K
+										|--Label >50K
 							|--Amer-Indian-Eskimo
 								|--Label <=50K
 							|--Other
@@ -5266,7 +5266,7 @@
 									|--Unmarried
 										|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label <=50K
 					|--Married-AF-spouse
@@ -5288,7 +5288,7 @@
 													|--False
 														|--Attribute age <= 32.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 33.0
 																	|--True
@@ -5296,7 +5296,7 @@
 																	|--False
 																		|--Attribute age <= 41.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 42.0
 																					|--True
@@ -5324,7 +5324,7 @@
 													|--False
 														|--Attribute age <= 35.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 36.0
 																	|--True
@@ -5336,7 +5336,7 @@
 									|--Amer-Indian-Eskimo
 										|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 							|--Private
 								|--Attribute relationship
 									|--Husband
@@ -5370,7 +5370,7 @@
 											|--Asian-Pac-Islander
 												|--Label <=50K
 											|--Black
-												|--Label <=50K
+												|--Label >50K
 									|--Own-child
 										|--Label <=50K
 									|--Wife
@@ -5456,17 +5456,17 @@
 																					|--False
 																						|--Attribute age <= 39.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 											|--Amer-Indian-Eskimo
 												|--Label <=50K
 											|--Asian-Pac-Islander
-												|--Label <=50K
+												|--Label >50K
 									|--Wife
 										|--Label <=50K
 									|--Own-child
-										|--Label <=50K
+										|--Label >50K
 									|--Not-in-family
 										|--Label <=50K
 							|--Never-married
@@ -5496,7 +5496,7 @@
 									|--Other-relative
 										|--Label <=50K
 							|--Married-spouse-absent
-								|--Label <=50K
+								|--Label >50K
 							|--Widowed
 								|--Label <=50K
 							|--Separated
@@ -5506,7 +5506,7 @@
 					|--Self-emp-not-inc
 						|--Attribute relationship
 							|--Unmarried
-								|--Label <=50K
+								|--Label >50K
 							|--Wife
 								|--Label >50K
 							|--Not-in-family
@@ -5520,7 +5520,7 @@
 					|--Federal-gov
 						|--Label <=50K
 					|--Self-emp-inc
-						|--Label <=50K
+						|--Label >50K
 			|--Armed-Forces
 				|--Label <=50K
 			|--Priv-house-serv
@@ -5632,7 +5632,7 @@
 													|--True
 														|--Attribute age <= 25.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 34.0
 																	|--True
@@ -5656,7 +5656,7 @@
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 					|--Separated
@@ -5834,7 +5834,7 @@
 									|--White
 										|--Label <=50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Amer-Indian-Eskimo
 										|--Label >50K
 							|--Divorced
@@ -5882,7 +5882,7 @@
 							|--Local-gov
 								|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 					|--Divorced
 						|--Label <=50K
 					|--Separated
@@ -5962,7 +5962,7 @@
 															|--True
 																|--Attribute age <= 29.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 30.0
 																			|--True
@@ -6020,13 +6020,13 @@
 											|--False
 												|--Attribute age <= 37.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Label >50K
 									|--Not-in-family
 										|--Attribute age <= 37.0
 											|--True
-												|--Label <=50K
+												|--Label >50K
 											|--False
 												|--Attribute age <= 38.0
 													|--True
@@ -6062,7 +6062,7 @@
 																			|--False
 																				|--Attribute age <= 36.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 38.0
 																							|--True
@@ -6074,7 +6074,7 @@
 											|--Unmarried
 												|--Label <=50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Asian-Pac-Islander
 										|--Label <=50K
 									|--Other
@@ -6124,7 +6124,7 @@
 													|--False
 														|--Attribute age <= 39.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label >50K
 									|--False
@@ -6248,7 +6248,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 																	|--False
 																		|--Attribute age <= 40.0
 																			|--True
@@ -6268,7 +6268,7 @@
 											|--Black
 												|--Label <=50K
 											|--Asian-Pac-Islander
-												|--Label <=50K
+												|--Label >50K
 									|--Own-child
 										|--Label <=50K
 									|--Unmarried
@@ -6308,7 +6308,7 @@
 																			|--False
 																				|--Label <=50K
 													|--False
-														|--Label <=50K
+														|--Label >50K
 											|--Unmarried
 												|--Label <=50K
 									|--Asian-Pac-Islander
@@ -6390,7 +6390,7 @@
 																					|--False
 																						|--Attribute hours_per_week <= 36.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 											|--Wife
@@ -6426,11 +6426,11 @@
 																	|--False
 																		|--Label >50K
 											|--False
-												|--Label <=50K
+												|--Label >50K
 									|--Black
 										|--Label >50K
 									|--Other
-										|--Label <=50K
+										|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 							|--Local-gov
@@ -6446,7 +6446,7 @@
 															|--True
 																|--Attribute age <= 30.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 31.0
 																			|--True
@@ -6454,7 +6454,7 @@
 																			|--False
 																				|--Attribute age <= 35.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 39.0
 																							|--True
@@ -6592,7 +6592,7 @@
 																	|--False
 																		|--Label <=50K
 											|--False
-												|--Label <=50K
+												|--Label >50K
 									|--Own-child
 										|--Label <=50K
 									|--Unmarried
@@ -6658,7 +6658,7 @@
 									|--Black
 										|--Label <=50K
 									|--Amer-Indian-Eskimo
-										|--Label <=50K
+										|--Label >50K
 							|--Self-emp-inc
 								|--Label >50K
 							|--Federal-gov
@@ -6760,7 +6760,7 @@
 							|--Unmarried
 								|--Label >50K
 					|--Married-spouse-absent
-						|--Label <=50K
+						|--Label >50K
 					|--Divorced
 						|--Attribute workclass
 							|--Self-emp-not-inc
@@ -6808,7 +6808,7 @@
 									|--False
 										|--Attribute age <= 33.0
 											|--True
-												|--Label <=50K
+												|--Label >50K
 											|--False
 												|--Label >50K
 							|--Federal-gov
@@ -6820,7 +6820,7 @@
 					|--Widowed
 						|--Label <=50K
 					|--Separated
-						|--Label <=50K
+						|--Label >50K
 					|--Divorced
 						|--Label >50K
 			|--Transport-moving
@@ -6864,7 +6864,7 @@
 									|--False
 										|--Label >50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 							|--Local-gov
@@ -7072,7 +7072,7 @@
 															|--False
 																|--Label <=50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label <=50K
 							|--State-gov
@@ -7134,7 +7134,7 @@
 					|--Self-emp-inc
 						|--Label <=50K
 					|--Self-emp-not-inc
-						|--Label <=50K
+						|--Label >50K
 					|--State-gov
 						|--Label <=50K
 			|--Prof-specialty
@@ -7152,7 +7152,7 @@
 							|--Private
 								|--Attribute race
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--White
 										|--Attribute age <= 21.0
 											|--True
@@ -7188,7 +7188,7 @@
 																					|--False
 																						|--Attribute age <= 32.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 																			|--False
@@ -7242,7 +7242,7 @@
 									|--False
 										|--Attribute age <= 56.0
 											|--True
-												|--Label <=50K
+												|--Label >50K
 											|--False
 												|--Attribute age <= 58.0
 													|--True
@@ -7382,7 +7382,7 @@
 							|--Self-emp-inc
 								|--Label <=50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label <=50K
 					|--Not-in-family
@@ -7460,7 +7460,7 @@
 															|--False
 																|--Attribute age <= 39.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 40.0
 																			|--True
@@ -7494,7 +7494,7 @@
 									|--Never-married
 										|--Label <=50K
 									|--Separated
-										|--Label <=50K
+										|--Label >50K
 									|--Widowed
 										|--Label <=50K
 							|--Self-emp-inc
@@ -7534,7 +7534,7 @@
 											|--Never-married
 												|--Label <=50K
 											|--Married-civ-spouse
-												|--Label <=50K
+												|--Label >50K
 									|--Asian-Pac-Islander
 										|--Label <=50K
 									|--Black
@@ -7642,11 +7642,11 @@
 																			|--True
 																				|--Attribute age <= 38.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
-																						|--Label <=50K
+																						|--Label >50K
 																			|--False
-																				|--Label <=50K
+																				|--Label >50K
 													|--False
 														|--Attribute age <= 41.0
 															|--True
@@ -7672,7 +7672,7 @@
 																					|--True
 																						|--Attribute age <= 53.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 																					|--False
@@ -7732,7 +7732,7 @@
 																					|--False
 																						|--Attribute age <= 43.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label >50K
 															|--False
@@ -7744,7 +7744,7 @@
 																			|--True
 																				|--Label >50K
 																			|--False
-																				|--Label <=50K
+																				|--Label >50K
 							|--Self-emp-not-inc
 								|--Attribute race
 									|--White
@@ -7774,7 +7774,7 @@
 											|--False
 												|--Attribute age <= 46.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 49.0
 															|--True
@@ -7784,9 +7784,9 @@
 									|--Black
 										|--Label >50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Amer-Indian-Eskimo
-										|--Label <=50K
+										|--Label >50K
 							|--Local-gov
 								|--Label <=50K
 							|--State-gov
@@ -7874,11 +7874,11 @@
 											|--Amer-Indian-Eskimo
 												|--Label <=50K
 									|--Other-relative
-										|--Label <=50K
+										|--Label >50K
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 					|--Widowed
@@ -7918,9 +7918,9 @@
 											|--Asian-Pac-Islander
 												|--Label <=50K
 									|--Other-relative
-										|--Label <=50K
+										|--Label >50K
 									|--Wife
-										|--Label <=50K
+										|--Label >50K
 							|--Never-married
 								|--Attribute relationship
 									|--Unmarried
@@ -8082,7 +8082,7 @@
 											|--False
 												|--Attribute age <= 25.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 26.0
 															|--True
@@ -8110,7 +8110,7 @@
 									|--Amer-Indian-Eskimo
 										|--Label <=50K
 									|--Other
-										|--Label <=50K
+										|--Label >50K
 							|--Husband
 								|--Attribute race
 									|--White
@@ -8140,7 +8140,7 @@
 																			|--True
 																				|--Attribute age <= 35.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 36.0
 																							|--True
@@ -8162,7 +8162,7 @@
 									|--Black
 										|--Label >50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Amer-Indian-Eskimo
 										|--Label <=50K
 							|--Unmarried
@@ -8680,7 +8680,7 @@
 									|--Black
 										|--Label <=50K
 									|--Other
-										|--Label <=50K
+										|--Label >50K
 									|--Asian-Pac-Islander
 										|--Label >50K
 									|--Amer-Indian-Eskimo
@@ -8726,7 +8726,7 @@
 																	|--False
 																		|--Attribute age <= 40.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 41.0
 																					|--True
@@ -8804,7 +8804,7 @@
 									|--State-gov
 										|--Label <=50K
 									|--Self-emp-not-inc
-										|--Label <=50K
+										|--Label >50K
 									|--Federal-gov
 										|--Label <=50K
 									|--Local-gov
@@ -9004,7 +9004,7 @@
 							|--Divorced
 								|--Label <=50K
 							|--Separated
-								|--Label <=50K
+								|--Label >50K
 							|--Widowed
 								|--Label <=50K
 					|--Self-emp-not-inc
@@ -9026,7 +9026,7 @@
 					|--Federal-gov
 						|--Attribute marital_status
 							|--Divorced
-								|--Label <=50K
+								|--Label >50K
 							|--Married-civ-spouse
 								|--Label >50K
 							|--Never-married
@@ -9246,7 +9246,7 @@
 													|--False
 														|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 							|--Never-married
 								|--Label <=50K
 							|--Divorced
@@ -9288,7 +9288,7 @@
 															|--False
 																|--Attribute age <= 34.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 35.0
 																			|--True
@@ -9306,7 +9306,7 @@
 									|--Amer-Indian-Eskimo
 										|--Label >50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Black
 										|--Label <=50K
 							|--Never-married
@@ -9328,7 +9328,7 @@
 							|--Widowed
 								|--Label <=50K
 							|--Married-spouse-absent
-								|--Label <=50K
+								|--Label >50K
 					|--State-gov
 						|--Label <=50K
 					|--Federal-gov
@@ -9376,7 +9376,7 @@
 															|--False
 																|--Attribute age <= 27.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 28.0
 																			|--True
@@ -9410,7 +9410,7 @@
 							|--Local-gov
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label >50K
 					|--Unmarried
@@ -9518,7 +9518,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 																			|--False
 																				|--Attribute age <= 55.0
 																					|--True
@@ -9552,7 +9552,7 @@
 									|--Own-child
 										|--Label <=50K
 									|--Unmarried
-										|--Label <=50K
+										|--Label >50K
 							|--Federal-gov
 								|--Label <=50K
 							|--Local-gov
@@ -9592,7 +9592,7 @@
 															|--False
 																|--Attribute age <= 34.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Label <=50K
 							|--Divorced
@@ -9700,7 +9700,7 @@
 															|--False
 																|--Attribute age <= 31.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 32.0
 																			|--True
@@ -9736,17 +9736,17 @@
 															|--False
 																|--Label <=50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Attribute age <= 38.0
 									|--True
 										|--Label <=50K
 									|--False
-										|--Label <=50K
+										|--Label >50K
 							|--Self-emp-inc
 								|--Label >50K
 					|--Married-AF-spouse
@@ -9820,7 +9820,7 @@
 																			|--False
 																				|--Attribute age <= 29.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Label <=50K
 													|--False
@@ -9836,7 +9836,7 @@
 									|--Asian-Pac-Islander
 										|--Label <=50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--Other
 										|--Label >50K
 							|--Self-emp-inc
@@ -9852,7 +9852,7 @@
 					|--Separated
 						|--Label <=50K
 					|--Widowed
-						|--Label <=50K
+						|--Label >50K
 			|--Protective-serv
 				|--Attribute workclass
 					|--Local-gov
@@ -9882,11 +9882,11 @@
 					|--Married-civ-spouse
 						|--Attribute workclass
 							|--Self-emp-not-inc
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Private
 								|--Attribute age <= 22.0
 									|--True
@@ -9922,7 +9922,7 @@
 													|--False
 														|--Label >50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 					|--Never-married
@@ -9956,7 +9956,7 @@
 							|--State-gov
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 					|--Divorced
 						|--Attribute workclass
 							|--Private
@@ -10014,7 +10014,7 @@
 															|--False
 																|--Attribute age <= 31.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Label <=50K
 											|--Wife
@@ -10026,11 +10026,11 @@
 									|--Amer-Indian-Eskimo
 										|--Label >50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Local-gov
 								|--Label <=50K
 							|--Self-emp-not-inc
@@ -10084,7 +10084,7 @@
 							|--Black
 								|--Label <=50K
 							|--Asian-Pac-Islander
-								|--Label <=50K
+								|--Label >50K
 							|--Other
 								|--Label <=50K
 					|--Divorced
@@ -10092,7 +10092,7 @@
 							|--Private
 								|--Label <=50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
 								|--Label <=50K
 							|--Local-gov
@@ -10122,9 +10122,9 @@
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-inc
 								|--Label <=50K
 					|--Never-married
@@ -10160,7 +10160,7 @@
 													|--False
 														|--Attribute age <= 31.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 36.0
 																	|--True
@@ -10184,7 +10184,7 @@
 							|--Self-emp-inc
 								|--Label >50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Local-gov
 								|--Label >50K
 							|--Self-emp-not-inc
@@ -10274,7 +10274,7 @@
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 					|--Divorced
 						|--Label <=50K
 					|--Never-married
@@ -10348,7 +10348,7 @@
 																							|--True
 																								|--Label <=50K
 																							|--False
-																								|--Label <=50K
+																								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 							|--Federal-gov
@@ -10358,7 +10358,7 @@
 							|--Self-emp-inc
 								|--Label <=50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 					|--Wife
 						|--Label >50K
 					|--Other-relative
@@ -10430,7 +10430,7 @@
 											|--False
 												|--Attribute hours_per_week <= 38.0
 													|--True
-														|--Label <=50K
+														|--Label >50K
 													|--False
 														|--Attribute age <= 32.0
 															|--True
@@ -10444,13 +10444,13 @@
 																			|--False
 																				|--Attribute age <= 26.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Label <=50K
 															|--False
 																|--Attribute age <= 33.0
 																	|--True
-																		|--Label <=50K
+																		|--Label >50K
 																	|--False
 																		|--Attribute age <= 43.0
 																			|--True
@@ -10466,7 +10466,7 @@
 																			|--False
 																				|--Attribute age <= 44.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 50.0
 																							|--True
@@ -10474,7 +10474,7 @@
 																							|--False
 																								|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 							|--Never-married
 								|--Attribute relationship
 									|--Not-in-family
@@ -10510,7 +10510,7 @@
 					|--Local-gov
 						|--Label <=50K
 					|--Federal-gov
-						|--Label <=50K
+						|--Label >50K
 					|--Self-emp-not-inc
 						|--Attribute marital_status
 							|--Divorced
@@ -10604,9 +10604,9 @@
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 					|--Widowed
 						|--Label <=50K
 					|--Divorced
@@ -10632,13 +10632,13 @@
 									|--Own-child
 										|--Label <=50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Federal-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-inc
 								|--Label >50K
 					|--Separated
@@ -10728,7 +10728,7 @@
 													|--False
 														|--Attribute age <= 24.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Attribute age <= 26.0
 																	|--True
@@ -10898,7 +10898,7 @@
 									|--False
 										|--Attribute age <= 35.0
 											|--True
-												|--Label <=50K
+												|--Label >50K
 											|--False
 												|--Attribute age <= 38.0
 													|--True
@@ -10944,7 +10944,7 @@
 					|--Wife
 						|--Label >50K
 					|--Other-relative
-						|--Label <=50K
+						|--Label >50K
 			|--Tech-support
 				|--Attribute relationship
 					|--Husband
@@ -10974,9 +10974,9 @@
 									|--Black
 										|--Label <=50K
 							|--Self-emp-not-inc
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
-								|--Label <=50K
+								|--Label >50K
 							|--Federal-gov
 								|--Label >50K
 							|--Local-gov
@@ -11100,7 +11100,7 @@
 					|--Own-child
 						|--Label <=50K
 					|--Wife
-						|--Label <=50K
+						|--Label >50K
 					|--Not-in-family
 						|--Label <=50K
 					|--Unmarried
@@ -11130,7 +11130,7 @@
 							|--Private
 								|--Attribute age <= 25.0
 									|--True
-										|--Label <=50K
+										|--Label >50K
 									|--False
 										|--Attribute age <= 32.0
 											|--True
@@ -11146,13 +11146,13 @@
 															|--False
 																|--Label >50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label >50K
 					|--Separated
 						|--Label <=50K
 					|--Widowed
-						|--Label <=50K
+						|--Label >50K
 					|--Married-spouse-absent
 						|--Label <=50K
 			|--Protective-serv
@@ -11170,7 +11170,7 @@
 							|--Own-child
 								|--Label <=50K
 					|--Federal-gov
-						|--Label <=50K
+						|--Label >50K
 					|--State-gov
 						|--Label <=50K
 					|--Self-emp-not-inc
@@ -11200,7 +11200,7 @@
 															|--False
 																|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 					|--Never-married
 						|--Label <=50K
 					|--Divorced
@@ -11254,7 +11254,7 @@
 							|--Local-gov
 								|--Label <=50K
 							|--Self-emp-not-inc
-								|--Label <=50K
+								|--Label >50K
 							|--State-gov
 								|--Label <=50K
 					|--Never-married
@@ -11354,7 +11354,7 @@
 									|--Self-emp-inc
 										|--Label >50K
 									|--Self-emp-not-inc
-										|--Label <=50K
+										|--Label >50K
 							|--Asian-Pac-Islander
 								|--Label <=50K
 							|--Other
@@ -11528,7 +11528,7 @@
 																	|--False
 																		|--Attribute age <= 36.0
 																			|--True
-																				|--Label <=50K
+																				|--Label >50K
 																			|--False
 																				|--Attribute age <= 37.0
 																					|--True
@@ -11562,7 +11562,7 @@
 																			|--False
 																				|--Attribute age <= 56.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 58.0
 																							|--True
@@ -11594,7 +11594,7 @@
 									|--Divorced
 										|--Label <=50K
 									|--Widowed
-										|--Label <=50K
+										|--Label >50K
 							|--Unmarried
 								|--Label >50K
 							|--Wife
@@ -11618,7 +11618,7 @@
 													|--False
 														|--Attribute age <= 36.0
 															|--True
-																|--Label <=50K
+																|--Label >50K
 															|--False
 																|--Label >50K
 									|--False
@@ -11626,7 +11626,7 @@
 							|--Not-in-family
 								|--Label >50K
 							|--Unmarried
-								|--Label <=50K
+								|--Label >50K
 							|--Own-child
 								|--Label <=50K
 							|--Wife
@@ -11666,7 +11666,7 @@
 																							|--False
 																								|--Label >50K
 									|--Asian-Pac-Islander
-										|--Label <=50K
+										|--Label >50K
 									|--Black
 										|--Label >50K
 							|--Own-child
@@ -11700,7 +11700,7 @@
 					|--Local-gov
 						|--Attribute marital_status
 							|--Never-married
-								|--Label <=50K
+								|--Label >50K
 							|--Married-civ-spouse
 								|--Label >50K
 							|--Divorced
@@ -11758,7 +11758,7 @@
 			|--Tech-support
 				|--Label <=50K
 			|--Craft-repair
-				|--Label <=50K
+				|--Label >50K
 			|--Other-service
 				|--Label >50K
 			|--Farming-fishing
@@ -11822,7 +11822,7 @@
 									|--Asian-Pac-Islander
 										|--Label >50K
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 							|--Not-in-family
 								|--Attribute marital_status
 									|--Never-married
@@ -11924,7 +11924,7 @@
 									|--Other
 										|--Label >50K
 							|--Wife
-								|--Label <=50K
+								|--Label >50K
 							|--Not-in-family
 								|--Attribute marital_status
 									|--Never-married
@@ -12002,7 +12002,7 @@
 							|--Divorced
 								|--Label <=50K
 							|--Never-married
-								|--Label <=50K
+								|--Label >50K
 							|--Married-civ-spouse
 								|--Label >50K
 							|--Separated
@@ -12290,7 +12290,7 @@
 																			|--False
 																				|--Attribute age <= 50.0
 																					|--True
-																						|--Label <=50K
+																						|--Label >50K
 																					|--False
 																						|--Attribute age <= 51.0
 																							|--True
@@ -12320,7 +12320,7 @@
 					|--Own-child
 						|--Label <=50K
 					|--Wife
-						|--Label <=50K
+						|--Label >50K
 			|--Other-service
 				|--Attribute marital_status
 					|--Widowed
@@ -12430,7 +12430,7 @@
 							|--Local-gov
 								|--Label <=50K
 							|--Self-emp-inc
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-not-inc
 								|--Label <=50K
 							|--Private
@@ -12444,7 +12444,7 @@
 							|--Private
 								|--Attribute race
 									|--Black
-										|--Label <=50K
+										|--Label >50K
 									|--White
 										|--Attribute age <= 25.0
 											|--True
@@ -12472,7 +12472,7 @@
 																					|--False
 																						|--Attribute age <= 52.0
 																							|--True
-																								|--Label <=50K
+																								|--Label >50K
 																							|--False
 																								|--Label <=50K
 									|--Amer-Indian-Eskimo
@@ -12558,7 +12558,7 @@
 							|--Private
 								|--Label <=50K
 							|--Self-emp-not-inc
-								|--Label <=50K
+								|--Label >50K
 							|--Self-emp-inc
 								|--Label <=50K
 					|--Other-relative
@@ -12568,7 +12568,7 @@
 					|--Unmarried
 						|--Label <=50K
 					|--Wife
-						|--Label <=50K
+						|--Label >50K
 			|--Protective-serv
 				|--Label <=50K
 			|--Priv-house-serv
@@ -12676,7 +12676,7 @@
 							|--Private
 								|--Label <=50K
 							|--Local-gov
-								|--Label <=50K
+								|--Label >50K
 					|--Divorced
 						|--Label <=50K
 					|--Never-married
@@ -12760,7 +12760,7 @@
 			|--Sales
 				|--Label <=50K
 			|--Exec-managerial
-				|--Label <=50K
+				|--Label >50K
 			|--Transport-moving
 				|--Label <=50K
 			|--Farming-fishing
