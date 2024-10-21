@@ -78,7 +78,6 @@ Hunt's algorithm builds a decision tree recursively. The main steps are:
 * ```hunt_algorithm.py```: Core functions to build the decision tree using Hunt's algorithm.
 * ```DecisionTree.py```: An encapsulated class of decision tree, including methods for training, predicting, evaluating and outputing the tree to the disk.
 * ```execute.py```: A script to train the decision tree on the given Adult dataset, evaluate its performance and save the predictions.
-* ```decision_tree.txt```: A file containing the structure of the output decision tree.
 
 ## How to Use
 
@@ -103,25 +102,37 @@ To train the model, evaluate its performance and get the predictions:
 python execute.py
 ```
 
-After training, the decision tree will be saved to ```decision_tree.txt```
+After training, the decision tree will be saved to ```output/decision_tree.txt```
 
 ## Customization
-You can modify the parameters of the decision tree (e.g., max depth, minumum samples for spliting, bining strategy for numeric attributes) in ```execute.py``` by changing the following line:
+You can modify the path of dataset and parameters of the decision tree (e.g., bining strategy for numeric attributes, max depth, minumum samples for spliting) following the example:
 
 ```python
-dt = DecisionTree(num_bins=8, max_depth=12, min_samples_split=15)
+python execute.py 10 20 30
 ```
 
 ## Output
-* 
+* ```output/decision_tree.txt```: A file containing the structure of the output decision tree.
+* ```output/test_pred.csv```: A file containing the predictions on evaluation set using trained decision tree.
 
-
-
-
-
-
-
-
+The output decision tree will look like this:
+```
+|--Attribute Education
+	|--Bachelors
+		|--Attribute occupation
+			|--Exec-managerial
+				|--Attribute marital_status
+					|--Married-civ-spouse
+						|--Attribute workclass
+							|--Self-emp-not-inc
+								|--Attribute race
+									|--White
+										|--Attribute relationship
+											|--Husband
+												|--Attribute age <= 26.0
+													|--True
+														|--Label <=50K
+```
 
 ## Evaluation
 
@@ -175,8 +186,21 @@ After calculating TP, FP, and FN, the function determines precision (the ratio o
 
 In summary, this evaluation method provides a comprehensive assessment of the model's effectiveness by using standard classification metrics, enabling us to understand its strengths and weaknesses in predicting income categories.
 
+The best model performance is shown below:
 
->>>>>>> 83660b5052c897392cd4aa4b13aecaf3f86324ab
+```
+========= Finished the model training =========
+========= Evaluation on Training Set =========
+Accuracy: 0.8462414949376567
+Precision: 0.7345728482128546
+Recall: 0.5990849673202614
+F1 Score: 0.6599467204262366
+========= Evaluation on Evaluation Set =========
+Accuracy: 0.8180215475024486
+Precision: 0.6738779463997416
+Recall: 0.5574252136752137
+F1 Score: 0.6101447156848414
+```
 
 
 

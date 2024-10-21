@@ -1,3 +1,5 @@
+import random
+import time
 from hunt_algorithm import *
 from collections import defaultdict
 
@@ -13,11 +15,14 @@ class DecisionTree:
         """
         Train the decision tree
         """
+        start = time.time()
         self.attribute_names = data[0]
         data = data[1:]
         self.tree = build_tree(data, target_index, attribute_names=self.attribute_names, 
                                max_depth=self.max_depth, min_samples_split=self.min_samples_split,
                                num_bins=self.num_bins)
+        end = time.time()
+        print(f"========= Model Training costs {end-start}s =========")
         
     def predict_instance(self, tree, instance):
         """

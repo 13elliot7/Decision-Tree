@@ -236,20 +236,3 @@ def write_tree(tree, depth, file=None):
             line = f"{indent}\t|--Label {subtree}\n"
             # print(line, end="")
             file.write(line)  
-
-# attribute_names = ["age", "workclass", "fnlwgt", "education", "education_num", "marital_status", "occupation", 
-#                    "relationship", "race", "sex", "capital_gain", "capital_loss", "hours_per_week"]
-# train_data = load_data('adult/adult_processed.csv') # 30717*14
-# test_data = load_data('adult/adult_test_processed.csv')
-# target_index = -1
-
-# decision_tree = build_tree(train_data, target_index)
-
-# with open('decision_tree.txt', 'w') as f:
-#     write_tree(decision_tree, 0, file=f)
-
-# print("The final decision tree has been written to 'decision_tree.txt'")
-# print(min(row[2] for row in train_data)) # 13769
-# print(max(row[2] for row in train_data)) # 1484705
-# for index in range(len(train_data[0])):
-#     print(len(set([row[index] for row in train_data]))) # 72 7 20494 16 16 7 14 6 5 2 118 90 94 2
