@@ -29,7 +29,7 @@ def save_data(filename, data, headers):
     print(f"Data has been saved.")
 
 
-def main(num_bins=100, max_depth=10, min_samples_split=25):
+def main(num_bins=10, max_depth=10, min_samples_split=25):
     # 1. load data
     # Note: the first row of your data must be header
     train_data = load_data("adult/adult_processed.csv") # 30718*14
@@ -98,10 +98,14 @@ def main(num_bins=100, max_depth=10, min_samples_split=25):
     data = test_data[1:]
     for i in range(len(data)):
         data[i].append(y_pred_test[i][0])
+        flag = True
+        if data[i][-1] != data[i][-2]:
+            flag = False
+        data[i].append(flag)
     headers = [
         "age", "workclass", "fnlwgt", "education", "education_num", "marital_status",
         "occupation", "relationship", "race", "sex", "capital_gain", "capital_loss",
-        "hours_per_week", "income", "predict"
+        "hours_per_week", "income", "predict", "classified_successfully"
     ]
     save_data("output/test_pred.csv", data, headers)
 
