@@ -1,4 +1,5 @@
 from hunt_algorithm import *
+from collections import defaultdict
 
 class DecisionTree:
     def __init__(self, num_bins=200, max_depth=None, min_samples_split=2):
@@ -54,12 +55,42 @@ class DecisionTree:
         return [[self.predict_instance(self.tree, instance)] for instance in data]
     
     def evaluate(self, y_actual, y_pred):
-        """
-        Evaluate the decision tree on the given dataset
-        """
-        correct_num = sum(1 for a, p in zip(y_actual, y_pred) if a == p)
-        accuracy = correct_num / len(y_actual)
-        return accuracy
+            """
+            Evaluate the decision tree on the given dataset, 
+            calculating accuracy, precision, recall, and F1 score.
+            """
+
+            y_actual = [label[0] for label in y_actual]
+            y_pred = [label[0] for label in y_pred]
+            
+            # Calculate accuracy
+            correct_num = sum(1 for a, p in zip(y_actual, y_pred) if a == p)
+            accuracy = correct_num / len(y_actual)
+            # Define the positive and negative classes
+            POSITIVE = '>50K'
+            NEGATIVE = '<=50K'
+
+            # Initialize counts
+            TP = 0  # True Positives
+            FP = 0  # False Positives
+            FN = 0  # False Negatives
+
+            # Calculate TP, FP, and FN
+            for actual, pred in zip(y_actual, y_pred):
+                    if actual == POSITIVE and pred == POSITIVE:
+                        TP += 1  # True Positive
+                    elif actual == NEGATIVE and pred == POSITIVE:
+                        FP += 1  # False Positive
+                    elif actual == POSITIVE and pred == NEGATIVE:
+                        FN += 1  # False Negative
+
+            # Calculate Precision, Recall, and F1 Score
+            precision = TP / (TP + FP) if (TP + FP) > 0 else 0
+            recall = TP / (TP + FN) if (TP + FN) > 0 else 0
+            f1_score = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+            
+            return accuracy, precision, recall, f1_score
+
     
     def save_tree(self, filename):
         """
@@ -67,4 +98,3 @@ class DecisionTree:
         """
         with open(filename, 'w') as f:
             write_tree(self.tree, 0, f)
-        

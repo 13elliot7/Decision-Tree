@@ -33,12 +33,21 @@ def main():
     y_pred_train = dt.predict(x_train)
     y_pred_test = dt.predict(x_test)
     
-    train_accuracy = dt.evaluate(y_train, y_pred_train)
+    train_accuracy, train_precision, train_recall, train_f1_score = dt.evaluate(y_train, y_pred_train)
     print("========= Evaluation on training set =========")
-    print(f"accuracy: {train_accuracy}")
-    test_accuracy = dt.evaluate(y_test, y_pred_test)
+    print(f"Accuracy: {train_accuracy}")
+    print(f"Precision: {train_precision}")
+    print(f"Recall: {train_recall}")
+    print(f"F1 Score: {train_f1_score}")
+    
+    test_accuracy, test_precision, test_recall, test_f1_score = dt.evaluate(y_test, y_pred_test)
     print("========= Evaluation on test set =========")
-    print(f"accuracy: {test_accuracy}")
+    print(f"Accuracy: {test_accuracy}")
+    print(f"Precision: {test_precision}")
+    print(f"Recall: {test_recall}")
+    print(f"F1 Score: {test_f1_score}")
+    
+
     # 4. save model
     dt.save_tree("decision_tree.txt")
 
